@@ -1,0 +1,8 @@
+Model,ROC-AUC,PR-AUC,Threshold (Val),F1,Precision,Recall,Top-1% Prec,Top-5% Prec
+1. LGBM standard (tout le train),0.6542,0.1747,0.115,0.2329,0.169,0.3746,0.4327,0.2519
+2. LGBM class_weight balanced,0.6549,0.1742,0.52,0.2353,0.1571,0.4683,0.4135,0.2366
+3. LGBM pondération douce >30 (w=0.3),0.6574,0.1778,0.165,0.2297,0.175,0.334,0.3846,0.2443
+4. LGBM train pur sans >30 + scale_pos,0.658,0.172,0.315,0.2419,0.1761,0.3861,0.3558,0.2424
+5. LGBM Multi-classes (P(<30j)),0.6547,0.1763,0.1,0.2307,0.1518,0.4797,0.3942,0.2424
+6. LGBM Optimisé (Régul + Poids adaptatifs),0.6595,0.1771,0.31,0.2298,0.1836,0.307,0.375,0.2481
+7. HistGradientBoosting,0.652,0.1717,0.115,0.2286,0.1677,0.359,0.3558,0.2462
